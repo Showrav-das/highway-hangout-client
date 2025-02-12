@@ -1,0 +1,29 @@
+[
+  {
+    "name": "Courtney Henry",
+    "img": "https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
+    "designation": "Executive Chefs"
+  },
+  {
+    "name": "Courtney Henry",
+    "img": "https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
+    "designation": "pastry chefs"
+  },
+  {
+    "name": "Courtney Henry",
+    "img": "https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
+    "designation": "pastry chefs"
+  },
+  {
+    "name": "Prawn Biryani",
+    "price": 750,
+    "img": "https://ibb.co.com/GQnS57Qx",
+    "details": "A Prawn Biryani is a food typically consisting of vegetables, sliced cheese or meat, placed on or between slices of bread, or more generally any dish wherein bread serves as a container or wrapper for another food type."
+  },
+  {
+    "name": "Hotdog",
+    "price": 250,
+    "img": "https://ibb.co.com/RT3myC0H",
+    "details": "A hot dog is a food consisting of a grilled or steamed sausage served in the slit of a partially sliced bun. The term hot dog can also refer to the sausage itself. The sausage used is a wiener or a frankfurter."
+  }
+]
