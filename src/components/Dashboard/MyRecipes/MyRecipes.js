@@ -14,7 +14,7 @@ const MyRecipes = () => {
   // load all orders by email query from database/server
 
   useEffect(() => {
-    fetch(`http://localhost:5000/myRecipes/${email}`)
+    fetch(`https://highway-hangout-server.vercel.app/myRecipes/${email}`)
       .then((res) => res.json())
       .then((data) => setOrders(data));
   }, [email]);
@@ -26,7 +26,7 @@ const MyRecipes = () => {
   const handleDeleteRecipe = (id) => {
     const proceed = window.confirm("Are you sure you want to delete?");
     if (proceed) {
-      const url = `http://localhost:5000/deleteRecipe/${id}`;
+      const url = `https://highway-hangout-server.vercel.app/deleteRecipe/${id}`;
       fetch(url, {
         method: "DELETE",
       })

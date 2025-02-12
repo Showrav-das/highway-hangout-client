@@ -13,7 +13,7 @@ https://highway-hangouts.web.app
 Live Server Link
 
 ```bash
-http://localhost:5000/
+https://highway-hangout-server.vercel.app/
 ```
 
 ## Usage

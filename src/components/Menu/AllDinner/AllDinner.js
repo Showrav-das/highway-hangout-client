@@ -7,7 +7,7 @@ import Dinner from "./Dinner/Dinner";
 const AllDinner = () => {
   const [allDinner, setDinner] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/alldinner")
+    fetch("https://highway-hangout-server.vercel.app/alldinner")
       .then((res) => res.json())
       .then((data) => setDinner(data));
     // .then(data => console.log(data));

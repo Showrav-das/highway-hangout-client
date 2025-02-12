@@ -10,7 +10,7 @@ function AllBooking() {
   const { user } = useAuth();
 
   useEffect(() => {
-    fetch("http://localhost:5000/booking")
+    fetch("https://highway-hangout-server.vercel.app/booking")
       .then((res) => res.json())
       .then((data) => setBookings(data))
       .catch((error) => console.log(error));
@@ -18,7 +18,7 @@ function AllBooking() {
 
   const handleUpdateStatus = (id) => {
     const statusUpdate = { status: "Confirmed" };
-    fetch(`http://localhost:5000/booking/${id}`, {
+    fetch(`https://highway-hangout-server.vercel.app/booking/${id}`, {
       method: "PUT",
       headers: { "content-type": "application/json" },
       body: JSON.stringify(statusUpdate),
@@ -47,7 +47,7 @@ function AllBooking() {
       confirmButtonText: "Yes, delete it!",
     }).then((result) => {
       if (result.isConfirmed) {
-        fetch(`http://localhost:5000/booking/${id}`, {
+        fetch(`https://highway-hangout-server.vercel.app/booking/${id}`, {
           method: "DELETE",
         })
           .then((res) => res.json())

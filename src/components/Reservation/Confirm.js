@@ -34,7 +34,7 @@ function Confirm() {
       book["status"] = "pending";
     }
 
-    fetch("http://localhost:5000/booking", {
+    fetch("https://highway-hangout-server.vercel.app/booking", {
       method: "POST",
       headers: {
         "content-type": "application/json",

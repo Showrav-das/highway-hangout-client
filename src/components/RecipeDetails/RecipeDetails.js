@@ -18,7 +18,7 @@ const RecipeDetails = () => {
 
   // data loading starts using Services.json file starts
   useEffect(() => {
-    fetch("http://localhost:5000/allRecipes")
+    fetch("https://highway-hangout-server.vercel.app/allRecipes")
       .then((res) => res.json())
       .then((data) => setData(data));
   }, []);

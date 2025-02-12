@@ -14,17 +14,19 @@ const BookingInfo = () => {
   const [booking, setBooking] = useState({});
 
   const onSubmit = (data) => {
-    axios.post("http://localhost:5000/booking", data).then((res) => {
-      console.log(res);
-      if (res.data.insertedId) {
-        alert("Successfully added your information.Thank you");
-        reset();
-      }
-    });
+    axios
+      .post("https://highway-hangout-server.vercel.app/booking", data)
+      .then((res) => {
+        console.log(res);
+        if (res.data.insertedId) {
+          alert("Successfully added your information.Thank you");
+          reset();
+        }
+      });
   };
 
   useEffect(() => {
-    fetch(`http://localhost:5000/allbreakfast/${id}`)
+    fetch(`https://highway-hangout-server.vercel.app/allbreakfast/${id}`)
       .then((res) => res.json())
       .then((data) => setBooking(data));
 

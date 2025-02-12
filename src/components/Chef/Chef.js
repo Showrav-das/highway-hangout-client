@@ -12,7 +12,7 @@ const Chef = () => {
 
   // data load from database/server starts
   useEffect(() => {
-    fetch("http://localhost:5000/allChefs")
+    fetch("https://highway-hangout-server.vercel.app/allChefs")
       .then((res) => res.json())
       .then((data) => setServices(data));
   }, []);
