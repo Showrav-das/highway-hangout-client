@@ -25,7 +25,7 @@ const Home = () => {
       {/* booking section ends */}
 
       {/* menu section starts */}
-      {/* <Menu></Menu> */}
+      <Menu></Menu>
       {/* menu section ends */}
 
       {/* chef section starts */}
