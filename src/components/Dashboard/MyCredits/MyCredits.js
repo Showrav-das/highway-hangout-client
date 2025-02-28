@@ -13,7 +13,7 @@ const MyCredits = () => {
   // load all orders by email query from database/server
 
   useEffect(() => {
-    fetch(`https://highway-hangout-server.vercel.app/myRecipes/${email}`)
+    fetch(`https://highway-hangout-server.onrender.com/myRecipes/${email}`)
       .then((res) => res.json())
       .then((data) => setRecipes(data));
   }, [email]);

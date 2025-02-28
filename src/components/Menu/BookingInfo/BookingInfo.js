@@ -15,7 +15,7 @@ const BookingInfo = () => {
 
   const onSubmit = (data) => {
     axios
-      .post("https://highway-hangout-server.vercel.app/booking", data)
+      .post("https://highway-hangout-server.onrender.com/booking", data)
       .then((res) => {
         console.log(res);
         if (res.data.insertedId) {
@@ -26,7 +26,7 @@ const BookingInfo = () => {
   };
 
   useEffect(() => {
-    fetch(`https://highway-hangout-server.vercel.app/allbreakfast/${id}`)
+    fetch(`https://highway-hangout-server.onrender.com/allbreakfast/${id}`)
       .then((res) => res.json())
       .then((data) => setBooking(data));
 

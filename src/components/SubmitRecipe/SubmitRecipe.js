@@ -32,7 +32,7 @@ const SubmitRecipe = () => {
 
     // Post/place new order
 
-    fetch(`https://highway-hangout-server.vercel.app/addRecipes`, {
+    fetch(`https://highway-hangout-server.onrender.com/addRecipes`, {
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify(orderInfo),

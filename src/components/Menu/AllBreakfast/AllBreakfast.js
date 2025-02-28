@@ -7,7 +7,7 @@ import Breakfast from "../Breakfast/Breakfast";
 const AllBreakfast = () => {
   const [allBreakfast, setBreakfast] = useState([]);
   useEffect(() => {
-    fetch("https://highway-hangout-server.vercel.app/allbreakfast")
+    fetch("https://highway-hangout-server.onrender.com/allbreakfast")
       .then((res) => res.json())
       .then((data) => setBreakfast(data));
     // .then(data => console.log(data));

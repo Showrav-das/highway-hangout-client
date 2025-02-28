@@ -13,7 +13,7 @@ const Recipe = () => {
 
   // data load from database/server starts
   useEffect(() => {
-    fetch("https://highway-hangout-server.vercel.app/allRecipes")
+    fetch("https://highway-hangout-server.onrender.com/allRecipes")
       .then((res) => res.json())
       .then((data) => setServices(data));
   }, []);

@@ -8,7 +8,7 @@ function MyBooking() {
   const [bookingInfo, setBookingInfo] = useState([]);
 
   useEffect(() => {
-    fetch(`https://highway-hangout-server.vercel.app/booking/${user.email}`)
+    fetch(`https://highway-hangout-server.onrender.com/booking/${user.email}`)
       .then((res) => res.json())
       .then((data) => setBookingInfo(data));
   }, [user.email]);
@@ -24,7 +24,7 @@ function MyBooking() {
       confirmButtonText: "Yes, delete it!",
     }).then((result) => {
       if (result.isConfirmed) {
-        fetch(`https://highway-hangout-server.vercel.app/booking/${id}`, {
+        fetch(`https://highway-hangout-server.onrender.com/booking/${id}`, {
           method: "DELETE",
         })
           .then((res) => res.json())

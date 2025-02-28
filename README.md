@@ -13,7 +13,7 @@ https://highway-hangouts.web.app
 Live Server Link
 
 ```bash
-https://highway-hangout-server.vercel.app/
+https://highway-hangout-server.onrender.com/
 ```
 
 ## Usage

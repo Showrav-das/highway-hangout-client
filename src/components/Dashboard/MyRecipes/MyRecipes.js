@@ -14,7 +14,7 @@ const MyRecipes = () => {
   // load all orders by email query from database/server
 
   useEffect(() => {
-    fetch(`https://highway-hangout-server.vercel.app/myRecipes/${email}`)
+    fetch(`https://highway-hangout-server.onrender.com/myRecipes/${email}`)
       .then((res) => res.json())
       .then((data) => setOrders(data));
   }, [email]);
@@ -26,7 +26,7 @@ const MyRecipes = () => {
   const handleDeleteRecipe = (id) => {
     const proceed = window.confirm("Are you sure you want to delete?");
     if (proceed) {
-      const url = `https://highway-hangout-server.vercel.app/deleteRecipe/${id}`;
+      const url = `https://highway-hangout-server.onrender.com/deleteRecipe/${id}`;
       fetch(url, {
         method: "DELETE",
       })

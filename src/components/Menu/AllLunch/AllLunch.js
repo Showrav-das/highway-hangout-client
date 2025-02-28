@@ -7,7 +7,7 @@ import Header from "../../../Shared/Header/Header";
 const AllLunch = () => {
   const [allLunch, setLunch] = useState([]);
   useEffect(() => {
-    fetch("https://highway-hangout-server.vercel.app/alllunch")
+    fetch("https://highway-hangout-server.onrender.com/alllunch")
       .then((res) => res.json())
       .then((data) => setLunch(data));
     // .then(data => console.log(data));

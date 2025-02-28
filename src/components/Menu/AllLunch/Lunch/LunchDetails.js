@@ -13,7 +13,7 @@ const LunchDetails = () => {
 
   // data loading starts using Services.json file starts
   useEffect(() => {
-    fetch("https://highway-hangout-server.vercel.app/allLunch")
+    fetch("https://highway-hangout-server.onrender.com/allLunch")
       .then((res) => res.json())
       .then((data) => setData(data));
   }, []);
